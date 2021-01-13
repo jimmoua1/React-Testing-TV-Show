@@ -14,6 +14,10 @@ export default function App() {
   const [selectedSeason, setSelectedSeason] = useState("");
   const episodes = seasons[selectedSeason] || [];
 
+  ///////
+  /////// Copy UseEffect to API folder
+  ///////
+  ///////
   useEffect(() => {
     const fetchShow = () => {
       axios
@@ -27,6 +31,10 @@ export default function App() {
     };
     fetchShow();
   }, []);
+
+
+
+
 
   const handleSelect = e => {
     setSelectedSeason(e.value);
